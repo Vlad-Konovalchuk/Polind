@@ -1,0 +1,103 @@
+.travel {
+  margin-top: -180px;
+  //display: flex;
+  //flex-direction: column;
+  &__title{
+    text-align: center;
+    font-size: $travel-title-fsz;
+    color: $travel-title-color;
+  }
+
+  &__form {
+    text-align: center;
+    position: relative;
+  }
+  &__input {
+    border: 1px solid transparent;
+    outline: none;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 100px;
+    background-color: #ffffff;
+    &:focus {
+      border: 1px solid #606f81;
+      box-shadow: 0 1px 5px 1px #000000a6;
+      transform: scale(1.1);
+    }
+  }
+  .travel__input::placeholder{
+    color: #a0a9b3;
+    font-size: 1.125rem;
+  }
+  &__logo {
+    background-color: #ffffff;
+    border:none;
+    position: absolute;
+    top: 38%;
+    right: 25%;
+    cursor: pointer;
+  }
+}
+
+.controls{
+  display: flex;
+  justify-content: space-around;
+  margin: 1.3rem;
+  
+  &__item{
+    background-color: #fff;
+    color: #000;
+  }
+  &__btn {
+    border: none;
+    outline: none;
+    color: $controls-btn-color;
+    border-radius: 100px;
+    padding: 0.5rem 0.7rem;
+
+  }
+  &__link{
+    color: $controls-btn-color;
+  }
+
+}
+
+.directions{
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__item {
+    text-align: center;
+    margin: 0 3.125rem 1.875rem 0;
+    padding: 0.5625rem;
+    background-color: $direction-item-bgc;
+  }
+  &__content{
+    margin: 1rem 0;
+  }
+  &__title{
+    font-size: $direction-title-fsz;
+    color: $direction-title-color;
+  }
+  &__text{
+    font-size: $direction-text-fsz;
+    color: $direction-text-color;
+  }
+
+  .btn-direction {
+    padding: 0.9rem 2rem;
+    color: $direction-btn-color;
+    background-color: $direction-btn-bgc;
+    transition: background-color 0.4s;
+    &:hover {
+      background-color: #ffc74a;
+      color: #b98000;
+    }
+  }
+
+
+
+
+}
