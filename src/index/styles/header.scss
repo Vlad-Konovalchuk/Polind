@@ -1,0 +1,88 @@
+.header {
+  background-image: url('../../assets/images/header.png');
+  background-size: cover;
+  color: $nav-text-color;
+  height: 1209px;
+
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    display: flex;
+    align-items: center;
+    &__title {
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: $logo-title-fsz;
+    }
+    &__img{
+      padding: 1.2rem;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    &__items {
+      display: flex;
+      align-items: center;
+    }
+    &__link {
+      color: $nav-text-color;
+      text-transform: capitalize;
+    }
+    &__item {
+      list-style-type: none;
+      padding: $navbar-item-pad;
+      font-size: $navbar-fsz;
+      &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        background-color: #fff;
+        transition: width .7s;
+        transform-origin: left;
+      }
+      &:hover {
+        transform: scale(1.1);
+        &:after {
+          width: 100%;
+        }
+      }
+
+    }
+    &__search {
+      cursor: pointer;
+    }
+  }
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: $content-line-h;
+  margin: 16.25rem 0 0 0;
+  &__title{
+    text-align: center;
+    font-size: $title-fsz;
+    color: $title-color;
+    margin: 0;
+    padding: 0;
+    &-red{
+      color: $title-color-red;
+    }
+  }
+  &__text{
+    font-size: $text-fsz;
+    color: $title-text-color;
+  }
+
+}
+
+
